@@ -1,2 +1,16 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!-- <%# if current_user %>
+  <h3>Welcome:
+    <%#= current_user.email %>
+  </h3>
+<%# end %> -->
+    <div class="jumbotron">
+      <h2>Welcome to the Pad Donation App!</h2>
+      <p class="lead">
+        It is in your hand to make a better world! Donate.
+      </p>
+    </div>
+    <div class="row">
+          <p>
+            <%= link_to 'Donate Pads', new_user_registration_path, class: 'btn btn-primary sign-up' %>
+          </p>
+     </div>
